@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+<head>
+	<meta charset="UTF-8" />
+	<title>多点商城</title>
+	<script src="./js/angular.min.js"></script>
+	<script src="./js/angular-ui-router.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/scroll.js"></script>
+	<script src="./js/page.js"></script>
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/page.css" />
+	<link rel="stylesheet" href="./css/media.css" />
+</head>
+<body ng-controller="firstCtrl">
+	<div class="header">
+		<div class="h_content">
+			<div class="h_content_l">
+				<img src="./img/dmall-logo.png" alt="" />
+			</div>
+            <div class="h_content_r">
+            	<ul ng-repeat="item in arr" ng-click="hed" class="ccc">
+	                <li class="da">
+	                    <a ui-sref={{item.path}} ui-sref-active="active">{{item.name}}</a>
+	                </li>
+	                <li class="shuai">
+	                	 <a>{{item.gg}}</a>
+	                </li>
+	                 <li class="shuai">
+	                	 <a>{{item.dd}}</a>
+	                </li>
+	                 <li class="shuai">
+	                	 <a>{{item.ff}}</a>
+	                </li>
+	            </ul>
+            </div>
+		    <div class="hovv"></div>
+		</div>
+	</div>
+	<div ui-view></div>
+	<div class="footer">
+		<div class="f_center">
+			<div class="f_center_l">
+				<a href="index.html" class="footlogo"> 
+					<img src="./img/logo.png" alt=""> 
+				</a>
+				<p style="margin-top: 8px;">多点新鲜（北京）电子商务有限公司</p>
+			    <p style="margin-top: -8px;">Dmall Life Network Technology Co., Ltd.</p>
+			    <p style="margin-top: 10px;">地址：北京市海淀区海淀文化艺术大厦8层</p>
+			    <p style="margin: -4px 0;">客服电话：10100818 &nbsp;&nbsp;&nbsp;&nbsp; 媒体合作：010-82308380 &nbsp;&nbsp;&nbsp;&nbsp; 公关联系方式：pr@dmall.com</p>
+			    <p class="footba" style="margin-top: 30px;color: #f5f5f5; font-size: 12px;">©2015&nbsp;&nbsp;多点新鲜（北京）电子商务有限公司&nbsp;&nbsp;京公安备&nbsp;&nbsp;11010802020480&nbsp;&nbsp;京ICP备15055633号</p>
+			</div>
+			<div class="f_center_r">
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">加入多点</a></li>
+					<li><a href="">关注公众号</a></li>
+				</ul>
+				<div class="footshare">
+					<a class="weibo">
+						<img src="./img/weibohover.png" alt="" class="weiboimg">
+					</a>
+					<a class="wechart"> 
+						<img src="./img/wecharthover.png" alt="" class="wechartimg"> 
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

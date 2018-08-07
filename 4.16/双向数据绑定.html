@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+</head>
+    <body ng-app="test">
+        <div ng-controller="CounterCtrl">
+            <br>
+            <button myclick>+1</button>
+
+            <br>
+
+            {{counter}}
+        </div>
+        <script>
+
+            var app = angular.module("test", []);
+
+            app.directive("myclick", function() {
+                return function (scope, element, attr) {
+                    element.on("click", function() {
+                        scope.counter++;    
+                        scope.$digest();
+                    });
+                };
+            });
+
+            app.controller("CounterCtrl", function($scope) {
+                $scope.counter = 0;
+            });
+        </script>
+    </body>
+</html>

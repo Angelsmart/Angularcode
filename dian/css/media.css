@@ -1,0 +1,286 @@
+@media (min-width: 768px) and (max-width: 1045px){
+	.header{
+		width: 100%;
+	    height: 120px;
+	}
+	.h_content{
+		width: 100%;
+		height: 52px;
+	}
+	.h_content_l{
+		width: 100%;
+		height: 52px;
+	}
+	.h_content .h_content_r{
+		width: 100%;
+		height: 52px;
+		display: flex;
+	}
+	.h_content_r ul{
+		flex: 1;
+	}
+	.page_section{
+		width: 100%;
+		height: 502px;
+		padding: 0;
+	}
+	.page_section_v{
+		width: 100%;
+	}
+	.page_section_v video{
+		width: 100%;
+	}
+	.page_Online_wrapper{
+		width: 100%;
+	}
+	.page_white{
+		height: 2070px;
+	}
+	.page_white_con{
+		width: 100%;
+		height: 2070px;
+	}
+	.freepay-wrapper{
+		width:990px;
+		height: 2070px;
+	}
+	.freepay-content{
+		float: inherit;
+		margin:0 auto;
+	}
+	.freepay-content:nth-of-type(2){
+		margin:0 auto;
+	}
+	.page_hy_con img{
+		display: none;
+	}
+	.page_hy_con_r{
+		padding: 0;
+		float: inherit;
+		margin: 0 auto;
+	}
+	.page_wei_mo{
+		width: 100%;
+		padding: 70px 0 150px 0;
+	}
+	.page_wei__span{
+		width: 100%;
+		padding: 40px 0;
+	}
+	.footer{
+		height: auto;
+	}
+	.f_center{
+		width: 100%;
+	}
+	.f_center_l{
+		width: 100%;
+		height: 234px;
+		float: inherit;
+	}
+	.f_center_r{
+		width: 100%;
+		height: 108px;
+		padding-top: 100px;
+		float: inherit;
+		background-color: #141416;
+	}
+	.footshare{
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 555px) and (max-width: 767px){
+	.header{
+		width: 100%;
+	    height: 120px;
+	}
+	.h_content{
+		width: 100%;
+		height: 52px;
+	}
+	.h_content_l{
+		width: 100%;
+		height: 52px;
+	}
+	.h_content .h_content_r{
+		width: 100%;
+		height: 52px;
+		display: flex;
+	}
+	.h_content_r ul{
+		flex: 1;
+	}
+	.page_section{
+		width: 100%;
+		height: 502px;
+		padding: 0;
+	}
+	.page_section_v{
+		width: 100%;
+	}
+	.page_section_v video{
+		width: 100%;
+	}
+	.page_Online_wrapper{
+		width: 100%;
+	}
+	.supplier-wrapper{
+		padding: 0;
+		margin: 0 auto;
+	}
+	.page_white{
+		height: 2070px;
+	}
+	.page_white_con{
+		width: 100%;
+		height: 2070px;
+	}
+	.freepay-wrapper{
+		width:100%;
+		height: 2070px;
+	}
+	.freepay-content{
+		float: inherit;
+		margin:0 auto;
+	}
+	.freepay-content:nth-of-type(2){
+		margin:0 auto;
+	}
+	.page_hy_con img{
+		display: none;
+	}
+	.page_hy_con_r{
+		padding: 0;
+		float: inherit;
+		margin: 0 auto;
+	}
+	.page_wei_mo{
+		width: 100%;
+		padding: 70px 0 150px 0;
+	}
+	.page_wei__span{
+		width: 100%;
+		padding: 40px 0;
+	}
+	.footer{
+		height: auto;
+	}
+	.f_center{
+		width: 100%;
+	}
+	.f_center_l{
+		width: 100%;
+		height: 234px;
+		float: inherit;
+	}
+	.f_center_r{
+		width: 100%;
+		height: 108px;
+		padding-top: 100px;
+		float: inherit;
+		background-color: #141416;
+	}
+	.footshare{
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+}
+@media all and (max-width:554px ) {
+	.header{
+		width: 100%;
+	    height: 60px;
+	}
+	.h_content{
+		width: 100%;
+		height: 52px;
+	}
+	.h_content_l{
+		float: left;
+	}
+	.h_content .h_content_r{
+		display: none;
+	}
+	.hovv{
+		width: 52px;
+		height: 52px;
+		background-color: cyan;
+		float: right;
+	}
+	.page_section{
+		width: 100%;
+		height: 502px;
+		padding: 0;
+	}
+	.page_section_v{
+		width: 100%;
+	}
+	.page_section_v video{
+		width: 100%;
+	}
+	.page_Online_wrapper{
+		width: 100%;
+	}
+	.supplier-wrapper{
+		padding: 0;
+		margin: 0 auto;
+	}
+	.page_white{
+		height: 2070px;
+	}
+	.page_white_con{
+		width: 100%;
+		height: 2070px;
+	}
+	.freepay-wrapper{
+		width:100%;
+		height: 2070px;
+	}
+	.freepay-content{
+		float: inherit;
+		margin:0 auto;
+	}
+	.freepay-content:nth-of-type(2){
+		margin:0 auto;
+	}
+	.page_hy_con img{
+		display: none;
+	}
+	.page_hy_con_r{
+		padding: 0;
+		float: inherit;
+		margin: 0 auto;
+	}
+	.page_wei_mo{
+		width: 100%;
+		padding: 0;
+		padding: 70px 0 150px 0;
+	}
+	.page_wei__span{
+		width: 100%;
+		padding: 40px 0;
+	}
+	.footer{
+		height: auto;
+	}
+	.f_center{
+		width: 100%;
+	}
+	.f_center_l{
+		width: 100%;
+		height: 234px;
+		float: inherit;
+	}
+	.f_center_r{
+		width: 100%;
+		height: 108px;
+		padding-top: 100px;
+		float: inherit;
+		background-color: #141416;
+	}
+	.footshare{
+		width: 50%;
+		margin: 0 auto;
+	}
+}

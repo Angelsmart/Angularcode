@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <title>学习angular4.4</title>
+    <style type="text/css">
+    	.btn{
+    		width: 200px;
+    		height: 200px;
+    		background: lime;
+    	}
+    </style>
+</head>
+
+<body ng-controller="firstCtrl">
+    <form>
+    	请选泽<input type="checkbox" ng-model="myVar"/>
+    </form>
+    <h1 ng-show="myVar">my Var</h1>
+    <br />
+    ------------------
+    <br />
+    <input type="checkbox" ng-model="flags" ng-checked="ff" />
+    <div class="btn" ng-show="flags"></div>
+    ------------------
+    <form name="myForm" novalidate>
+    	<p>邮箱:<br>
+		  <input type="email" name="email" ng-model="email" required>
+		  <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+			  <span ng-show="myForm.email.$error.required">邮箱是必须的。</span>
+			  <span ng-show="myForm.email.$error.email">非法的邮箱。</span>
+		  </span>
+		</p>
+    </form>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller('firstCtrl',['$scope','$http',function($scope,$http){
+        	$scope.ff = true;
+        	$scope.flags = function(){
+        		$scope.ff = !$scope.ff;
+        	};
+		    $scope.email = 'john.doe@gmail.com';
+         }]);
+    </script>
+</body>
+
+</html>

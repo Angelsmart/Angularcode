@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="./css/home.css">
+<section>
+    <div class="hero_image">
+        <ul class="hero_overlay">
+            <li class="hero_copy"><p>Exclusive deals on drinks, delivered straight to your inbox.</p></li>
+            <li class="button_wrap"><a href="" ui-sref="up">Sign up now</a></li>
+        </ul>
+    </div>
+</section>
+<div class="msr_bar">
+    <div class="msr">
+        <div class="rewards_logo">
+            <img src="./images/msr3_usen_logo.svg" alt="">
+        </div>
+        <div class="grid">
+            <div class="rewards_copy">
+                <h1>Make every sip more rewarding</h1>
+                <p>Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food, get free refills, pay and order with your phone, and more.</p>
+            </div>
+        </div>
+        <div class="cta_wrap">
+            <a href="" class="sign_up_link">Join Now</a>
+            <a href="" class="sign_in_link">Sign In</a>
+        </div>
+    </div>
+</div>
+<div class="content_stripes_container">
+    <div class="content_stripe" ng-repeat="con in cons">
+        <div class="grid_middle">
+            <div class="image_block"><a href=""><img ng-src="{{con.img}}" alt=""></a></div>
+            <div class="text_block">
+                <h2>{{con.h2}}</h2>
+                <p>Together we’re working to make coffee the world’s first sustainable agricultural product.</p>
+                <a href="">{{con.but}}</a>
+            </div>
+        </div>
+    </div>
+</div>

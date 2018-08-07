@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head ng-app="myApp">
+    <meta charset="UTF-8">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-ui-router.js"></script>
+    <title>4.11作用域</title>
+</head>
+
+<body >
+    <div ng-controller="firstCtrl">{{name}}</div>
+    <div ng-controller="haha">{{sex}}</div>
+    <script>
+    	(function(){
+    		var app = angular.module("myApp", ['ui.router']);
+    		app.controller('firstCtrl',['$rootScope','$scope',function($rootScope,$scope){
+    			$rootScope.$scope = $scope;
+    			console.log($rootScope.$scope);
+    			$scope.name = "kkk";
+    		}])
+    		.controller('haha',['$scope',function($scope){
+    			$scope.sex = '男';
+    		}])
+    	})()
+        
+        
+    </script>
+</body>
+
+</html>

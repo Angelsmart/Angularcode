@@ -1,0 +1,8 @@
+demand
+星巴克官网（英文）
+1.周期到考试前做完
+2.技术栈：angular ui-router 指令 组件通信   ES6/Es7.$http请求
+3.要求使用json数据
+4.有tab切换类的组件用路由实现ui.router嵌套
+5.有登录页，首页（登录成功才能进入官网首页）   sing up now页面（强烈要求响应式）
+6.尽量减少http请求的使用

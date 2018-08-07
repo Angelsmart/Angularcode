@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	
+}
+.h_content{
+	width: 990px;
+	height: 52px;
+	margin: 0 auto;
+}
+.h_content_l{
+	float: left;
+}
+.h_content_l img{
+	height: 40px;
+	margin-top: 10px;
+}
+.h_content .h_content_r{
+	width: 55%;
+	height: 52px;
+	float: right;
+}
+.h_content_r ul{
+	height: 100%;
+	float: left;
+}
+.h_content_r ul li{
+	height: 52px;
+	padding:0 12px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+}
+.h_content_r ul:nth-of-type(2){
+	overflow: hidden;
+}
+.h_content_r ul:nth-of-type(2):hover{
+	overflow: visible;
+	height: auto;
+}
+.h_content_r ul:nth-of-type(3){
+	overflow: hidden;
+}
+.h_content_r ul:nth-of-type(3):hover{
+	overflow: visible;
+	height: auto;
+}
+.h_content_r ul:nth-of-type(2) .shuai{
+	opacity: 0;
+	/*background-color: #FF8400;*/
+	font-size: 14px;
+}
+.h_content_r ul:nth-of-type(2):hover .shuai{
+	transition: all 1s;
+	opacity: 1;
+}
+.h_content_r ul:nth-of-type(2) .shuai a{
+	padding:10px 5px;
+}
+.h_content_r ul:nth-of-type(2) .shuai:hover a{
+	background-color: #FFE6CC;
+	color: #FF903F;
+}
+.h_content_r ul:nth-of-type(3) .shuai{
+	opacity: 0;
+	/*background-color: #FF8400;*/
+	font-size: 14px;
+}
+.h_content_r ul:nth-of-type(3):hover .shuai{
+	transition: all 1s;
+	opacity: 1;
+}
+.h_content_r ul:nth-of-type(3) .shuai a{
+	padding:10px 5px;
+}
+.h_content_r ul:nth-of-type(3) .shuai:hover a{
+	background-color: #FFE6CC;
+	color: #FF903F;
+}
+
+.h_content_r ul li a{
+	padding:18px 10px 6px 10px;
+	display:inline-block;
+	color: #fff;
+}
+.active{
+	border-bottom: 2px solid #FFFFFF;
+}
+
+/*脚步效果*/
+.footer{
+	width: 100%;
+	height: 300px;
+	background-color: #141416;
+}
+.f_center{
+	width: 990px;
+	height: 234px;
+	padding-top: 14px;
+	margin:0 auto;
+}
+.f_center_l{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+.f_center_l p{
+	height: 28px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.f_center_r{
+	width: 332px;
+	height: 108px;
+	padding-top: 100px;
+	float: right;
+}
+.f_center_r ul{
+    width: 100%;
+    height: 28px;
+    display: flex;
+}
+.f_center_r ul li{
+    flex: 1;
+    text-align: center;
+}
+.f_center_r ul li:hover a{
+	transition: all 0.5s;
+     color: #FB7533;
+}
+.f_center_r ul li a{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.footshare{
+	padding: 40px 0 0;
+}
+.footshare .wechart{
+	float: right;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background:url(../img/wecharth.png) no-repeat center;
+	margin-left: 30px;
+	position: relative;
+}
+.footshare .weibo{
+	float: right;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background:url(../img/weiboh.png) no-repeat center;
+	margin-left: 30px;
+	position: relative;
+}
+.footshare .wechart .wechartimg{
+	display: none;
+	position: absolute;
+	left: -100px;
+	top: -300px;
+}
+.footshare .weibo .weiboimg{
+	display: none;
+	position: absolute;
+	left: -100px;
+	top: -300px;
+}
+.footshare .wechart:hover .wechartimg{
+	display: block;
+}
+.footshare .weibo:hover .weiboimg{
+	display: block;
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"  ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>住多多</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="comment/css/page.css" />
+    <link rel="stylesheet" type="text/css" href="comment/css/shortRent.css" />
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    
+</head>
+<body>
+    <div class="header" ng-controller="ctrl">
+        <div class="header-inner">
+            <a href="">
+                <img src="img/logo.png" alt="">
+            </a>
+            <ul class='nav'>
+                <li ng-repeat="item in arr">
+                    <a ui-sref={{item.path}} ui-sref-active="active">{{item.name}}</a>
+                </li>
+            </ul>
+            <div class="ho"></div>
+        </div>
+    </div>
+    <div class="loop" ng-controller="loop">
+    	<ul>
+			<li ng-repeat="item in name" style={{$index==index?'display:block':'display:none'}} ng-mouseover="mouse()" >
+			    <img ng-src={{item.img}} alt="">
+			</li>
+		</ul>
+    </div>
+    <div class="center">
+    	<div ui-view></div>
+    </div>
+    <div class="foots" ng-controller="fot">
+        <p><span class="tel">{{tel}}</span></p>
+        <p>{{address}}</p>
+    </div>
+
+</body>
+    <script src="index.js"></script>
+    <script src="comment/js/shortRent.js"></script>
+</html>

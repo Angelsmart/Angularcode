@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myDemo">
+	<head>
+		<meta charset="UTF-8">
+		<title>ui.router</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/angular-ui-router.js"></script>
+	</head>
+	<body ng-controller='firstCtrl'>
+		<ul>
+		    <li><a ui-sref="login" ui-sref-active="active">首页</a></li>
+		    <li><a ui-sref="admin" ui-sref-active="active">管理页面</a></li>
+		    <li><a ui-sref="404page" ui-sref-active="active">404页面</a></li>
+		</ul>
+
+	    <div ui-view></div>
+		<div>{{name}}</div>
+		<script type="text/javascript">
+			;(function(){
+				var app = angular.module('myDemo',['ui.router']);
+				app.controller('firstCtrl',['$scope',function($scope){
+					$scope.name = "ming";
+				}]);
+				
+				//第一种默认显示的路由
+				app.config(function($urlRouterProvider){
+					$urlRouterProvider.otherwise('/login')
+				});
+				
+				//第二种默认显示的路由
+				/*app.run(function($state){
+					$state.go('login')
+					console.log($state)
+				})*/
+				
+				//第一种ui.router方法
+				/*app.config(function($stateProvider){
+					$stateProvider
+					.state('login',{
+						url:"/login",
+						templateUrl:'../router/login.html'
+					})
+					.state('admin',{
+						url:"/admin",
+						templateUrl:'../router/admin.html'
+					})
+					.state('404page',{
+						url:"/404page",
+						templateUrl:'../router/404page.html'
+					})
+				})*/
+				
+				//第二种ui.router方法
+				app.config(['$stateProvider',function($stateProvider){
+					$stateProvider
+					.state('login',{
+						url:"/login",
+						templateUrl:'./router/login.html'
+					})
+					.state('admin',{
+						url:"/admin",
+						templateUrl:'./router/admin.html'
+					})
+					.state('404page',{
+						url:"/404page",
+						templateUrl:'./router/404page.html'
+					});
+				}]);
+			})();
+		</script>
+	</body>
+</html>

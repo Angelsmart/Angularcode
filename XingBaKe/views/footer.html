@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="./css/footer.css">
+<div class="footer">
+    <div class="footer-top">
+        <div class="footer-box">
+            <div class="gid">
+                <ul>
+                    <li ng-repeat="ion in ions" class='ion {{ion.class}}'>
+                        <a href=""></a>
+                    </li>
+                </ul>
+                <div class="box-right">
+                    <form action="">
+                        <div class="form">
+                            <label for="">Join our email list</label>
+                            <ol>
+                                <li><input type="text" placeholder="Email address"></li>
+                                <li><input type="text" placeholder="Zip code"></li>
+                                <li>
+                                    <span>
+                                        <button>Get Started</button>
+                                    </span>
+                                </li>
+                            </ol>
+                            <p class="text">
+                                By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from Starbucks. See our
+                                <a href="">Privacy Statement</a>
+                                and
+                                <a href="">Customer Service</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-box">
+            <div class="gid">
+                <div ng-repeat="foot in footer " class="info" >
+                    <h4><a href="">{{foot.title}}</a></h4>
+                    <ol>
+                        <li><a href="">{{foot.txts[0].txt1}}</a></li>
+                        <li><a href="">{{foot.txts[1].txt2}}</a></li>
+                        <li><a href="">{{foot.txts[2].txt3}}</a></li>
+                        <li><a href="">{{foot.txts[3].txt4}}</a></li>
+                        <li><a href="">{{foot.txts[4].txt5}}</a></li>
+                        <li><a href="">{{foot.txts[5].txt6}}</a></li>
+                        <li><a href="">{{foot.txts[6].txt7}}</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-cont">
+            <div class="gidr">
+                <div class="foot-top">
+                    <ul>
+                        <li><a href="">
+                            <img src="./images/us.png" alt="">
+                            Change Region
+                        </a></li>
+                        <li>English</li>
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <ul>
+                        <li ng-repeat="box in boxs">
+                            <a href="">{{box.txt}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bott">
+                    <p>© 2018 Starbucks Corporation.  All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

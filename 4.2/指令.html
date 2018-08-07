@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <title>学习angular</title>
+</head>
+
+<body ng-controller="firstCtrl">
+    <div ng-hide="hidden">中文名:{{name}} 账号:{{zhang}}</div>
+    <input ng-model="name" placeholder="请输入用户名" />
+    <div>{{name}}</div>
+    <div ng-init="names=[
+        {name:'Jani',country:'花果山'},
+        {name:'Hege',country:'龙王庙'},
+        {name:'Kai',country:'蜜桃院'}]">
+        <ul>
+            <li ng-repeat="item in names" ng-click="getuser()">{{ item.name+'--'+item.country }}</li>
+        </ul>
+        <span ng-repeat="item in arr">{{item.name+'-->'+item.country}}</span>
+        <div>{{obj.name +'-'+ obj.age +'-'+ obj.sex}}</div>
+    </div>
+    <!--过滤器-->
+    <div ng-controller="secondCtrl">
+    	{{money | currency}}或者{{money | currency:"￥"}}
+    	转换大写{{name | uppercase}}
+    	转换小写{{mag | lowercase}}
+    	</br>
+    	<span ng-repeat="item in ase | filter:{name: '泰迪'}">{{item.name}}</span>
+    	<div ng-repeat="item in ase | filter:{name: '黑蛋'}">
+    		<div ng-click="getuser()">{{item.name}}</div>
+    	</div>
+    </div>
+    <p ng-controller="express">{{num * price}}---{{sumMoney}}</p>
+    <script>
+        //每次写angular模块时，必须是angular.module开始
+        var app = angular.module("myApp", []);
+        app.controller('firstCtrl', function($scope) {
+                console.log($scope);
+                $scope.name = '明明';
+                $scope.zhang = 'abc2809839110';
+                $scope.hidden = false;
+                $scope.arr = [{
+                    name: 'Jani',
+                    country: '花果山'
+                }, {
+                    name: 'Hege',
+                    country: '龙王庙'
+                }, {
+                    name: 'Kai',
+                    country: '蜜桃院'
+                }];
+                $scope.getuser = function() {
+                    console.log(1);
+                };
+                $scope.obj = {
+                    name : "黑蛋",
+                    age : 20,
+                    sex : "女",
+                };
+            })
+            //另一个控制器
+            .controller('secondCtrl', function($scope) {
+                console.log($scope);
+                $scope.money = 50;
+                $scope.name="abc";
+                $scope.mag="EFG";
+                $scope.ase = [{
+                    name: '黑蛋',
+                }, {
+                    name: '泰迪',
+                }, {
+                    name: '小泉',
+                }];
+                $scope.users = function(){
+                	console.log(1)
+                }
+            })
+            .controller('express',function($scope){
+            	$scope.num = 10;
+            	$scope.price = 5;
+            	$scope.sumMoney = $scope.num * $scope.price;
+            })
+            .filter('num',function(){
+            	var array = [],
+            	for(var i = 0; i<input.length;i++){
+            		
+            	}
+            })
+    </script>
+</body>
+
+</html>

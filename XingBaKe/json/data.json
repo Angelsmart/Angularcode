@@ -1,0 +1,26 @@
+{
+  "navs": [
+    {"nav":"COFFEE","path":"coffee"},
+    {"nav":"TEA","path":"tea"},
+    {"nav":"MENU","path":"menu"},
+    {"nav":"COFFEEHOUSE","path":"coffeehouse"},
+    {"nav":"SOCIAL IMPACT","path":"social"},
+    {"nav":"STARBUCKS REWARDS","path":"starbucks"},
+    {"nav":"BLOG","path":".blog"},
+    {"nav":"GIFT CARDS","path":"gift"}
+  ],
+  "menus":[
+  {"menu":"menu1"},
+  {"menu":"menu2"},
+  {"menu":"menu3"},
+  {"menu":"menu4"},
+  {"menu":"menu5"},
+  {"menu":"menu6"},
+  {"menu":"menu7"},
+  {"menu":"menu8"}
+],
+  "con":[
+    {"img":"./images/Macc.jpg","h2":"MACCHIATOS MADE TO CRAVE","txt":"Bold espresso, creamy layers and that signature crosshatch drizzle. Celebrate the day with a macchiato.","but":"Macchiato me"},
+    {"img":"./images/Coff.jpg","h2":"COFFEE NEEDS ALL OF US","txt":"Together we’re working to make coffee the world’s first sustainable agricultural product.","but":"Learn More"}
+  ]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Starbucks – The Best Coffee and Espresso Drinks</title>
+    <script src="angularJs/angular.min.js"></script>
+    <script src="angularJs/angular-ui-router.js"></script>
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="indexCtrl" ng-cloak>
+        <div ui-view=""></div>
+        <div ui-view="content"></div>
+        <div ui-view="footer"></div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+<script src="js/header.js"></script>
+<script src="js/home.js"></script>
+<script src="js/footer.js"></script>
+</html>

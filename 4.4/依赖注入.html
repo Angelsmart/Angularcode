@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <title>学习angular4.4</title>
+</head>
+
+<body ng-controller="firstCtrl">
+	<div ng-repeat="itm in userList">
+		{{itm.name}}
+	</div>
+	-------------------
+    <div>{{name}}</div>
+    -----------------
+    <!--时间格式-->
+    <div>{{currentDate | date:'hh:mm:ss yyyy-MM-dd'}}</div>
+    -----------------
+    <!--保留小数位数-->
+    <div>{{num | number:2}}</div>
+    
+    <script>
+        //每次写angular模块时，必须是angular.module开始
+        var app = angular.module("myApp", []);
+        //第一种写法  不太标准，漏洞较多
+//      app.controller('firstCtrl', function($scope) {
+//             $scope.name = "明明";
+//          })
+        //第二种写法  []依赖注入
+        app.controller('firstCtrl',['$scope','$http','$interval',function($scope,$http,$interval){
+        	$scope.name = '明明';
+        	$scope.num = 1.235323;
+        	$scope.currentDate = new Date();
+        	$scope.setele = $interval(function(){
+        		$scope.currentDate = new Date();
+        	});
+//      	$scope.userList = null;
+        	//promise方法
+	       /* $http.get('num.json')
+		        .then((response)=>{
+		        	console.log(response);
+		        	$scope.userList = response.data.names;
+		        })
+		        .catch((error)=>{
+		        	console.log(error);
+		        })*/
+		    $http({
+		    	method:"GET",
+		    	url:"num.json",
+		    }).success(function(res){
+		    	console.log(res.names)
+		    	 $scope.userList = res.names;
+		    }).error(function(err){
+		    	console.log(err)
+		    })
+         }])   
+    </script>
+</body>
+
+</html>

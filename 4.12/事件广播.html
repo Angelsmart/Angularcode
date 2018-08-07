@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head ng-app="myApp">
+    <meta charset="UTF-8">
+    <script src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/angular-ui-router.js"></script>
+    
+    <title>4.12事件广播</title>
+    <style>
+    	.parentctrl{
+    		width: 800px;
+    		height: 500px;
+    		background: blue;
+    	}
+    	.ctrl1{
+    		width: 500px;
+    		height: 50px;
+    		background-color:darkgoldenrod ;
+    	}
+    	.ctrl2{
+    		width: 500px;
+    		height: 50px;
+    		background-color:limegreen;
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="parentctrl" ng-controller="parentctrl">
+    	<div class="ctrl1" ng-controller="ctrl1">
+    		<input ng-change="change(ming)" ng-model="ming"  placeholder="请输入用户名"/>
+    	</div>
+    	<div class="ctrl2" ng-controller="ctrl2">
+    		{{ming}}
+    	</div>
+    </div>
+    <script>
+    	(function(){
+    		//就是同级控制器之间的通信
+    		var app = angular.module("myApp",["ui.router"]);
+    		app.controller('parentctrl',["$scope",function($scope){
+    			//接收ctrl1子控制器传递上来的的数据
+    			$scope.$on("sendName",function(e,msg){
+    				console.log(e)
+    				console.log(msg)
+    				//广播子控制器传来的数据到ctrl2控制器内
+    				$scope.$broadcast("ALLName",msg);
+    				
+    			});
+    		}])
+    		.controller("ctrl1",["$scope",function($scope){
+    			//获取input框输入的内容，并发送到福控制器parentctrl
+    			$scope.change = function(ming){
+    				$scope.$emit('sendName',ming)
+    			}
+    		}])
+    		.controller("ctrl2",["$scope",function($scope){
+    			//接收parentctrl控制器器广播的数据
+    			$scope.$on("ALLName",function(e,msg){
+    				$scope.ming = msg;
+    			});
+    		}])
+    	})()
+        
+        
+    </script>
+</body>
+
+</html>

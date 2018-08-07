@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <title>学习angular4.5</title>
+    <style type="text/css">
+    	[ng-clock]:{
+    		display: none;
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="box" ng-clock ng-controller="firstCtrl">
+    	{{message}}
+        <div>{{newDate | date:'hh:mm:ss yyyy-MM-dd'}}</div>
+    </div>
+    <script>
+    	//要用自调用
+    	;(function(){
+    		console.log(this);
+    		var app = angular.module("myApp", []);
+	        app.controller('firstCtrl',['$scope','$interval',function($scope,$interval){
+	        	$scope.message = "明明";
+	        	$scope.newDate = new Date();
+	        	$scope.set = $interval(function(){
+	        		$scope.newDate = new Date();
+	        	},1000)
+	        }]);
+	        angular.bootstrap(document.getElementsByClassName('box'),['myApp']);
+	      
+    	})()
+        	
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p,pre,input,form{
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+a{
+	text-decoration: none;
+}
+b,strong{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+img{
+	border:0;
+}
+.home{
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFBB;
+}
+.co{
+	display: block;
+	width: 540px;
+	height: 360px;
+	background:url(../img/home.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	margin: 50px auto;
+}
+input,button{
+	display: block;
+	border: 0;
+	outline: none;
+	color: #007751;
+	background:rgba(255,255,255,0.8);
+	font-size: 18px;
+}
+.inone{
+	width: 80%;
+	height: 10%;
+	margin: 50px auto;
+}
+.intwo{
+	width: 80%;
+	height: 10%;
+	margin: 50px auto;
+}
+button{
+	width: 80%;
+	height: 10%;
+	background:rgba(255,255,255,0.8);
+	margin: 50px auto;
+}

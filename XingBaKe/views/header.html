@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./css/header.css">
+<header>
+    <div class="header_bar"></div>
+    <div class="header_container">
+        <div class="container">
+            <ul class="utility_list">
+                <li class="utility_li1"><a href=""><span class="iconfont icon-zuobiao"></span>Find a Store</a></li>
+                <li class="utility_li2"><a href="">Sign In</a></li>
+            </ul>
+            <a href="" ui-sref="home" class="logo"></a>
+            <ul class="nav_list nav_list-c">
+                 <li ng-repeat="nav in navs" ng-mouseover="over($index)" ng-mouseleave="leave($index)" id="{{$index==index?'aa':''}}">
+                      <a href="" ui-sref="{{nav.path}}" ui-sref-active="active">{{nav.nav}}</a>
+                  </li>
+            </ul>
+            <ul class="nav_show">
+                <li class="store"><a href=""><span class="iconfont icon-zuobiao"></span></a></li>
+                <li class="small" ng-mouseup="up()"><a href=""><span class="hamburger"></span></a></li>
+            </ul>
+        </div>
+    </div>
+    <ul class="nav_list_show nav_list-c">
+        <li ng-repeat="nav in navs">
+            <a href="" ui-sref="{{nav.path}}">{{nav.nav}}</a>
+        </li>
+    </ul>
+    <div class="menus">
+        <ol class="menu" ng-mouseleave="leave($index)">
+            <li class="men" ng-repeat="menu in menus" style="{{$index==index?'display:block':'display:none'}}" ng-mouseover="over($index)">{{menu.menu}}</li>
+        </ol>
+    </div>
+</header>

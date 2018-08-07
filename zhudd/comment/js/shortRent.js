@@ -1,0 +1,19 @@
+app.controller('shortRent',['$scope',function($scope){
+    $scope.arrs=[
+        {img:"./img/trust-community-icon1.jpg",tex:"宽敞舒适，厨卫齐全"},
+        {img:"./img/trust-community-icon2.jpg",tex:"WIFI无线，洁净舒心"},
+        {img:"./img/trust-community-icon3.jpg",tex:"宽敞舒适，厨卫齐全"}
+    ];
+    $scope.icon=[
+         {textb:"多人多天更划算",textc:"能做饭能洗衣，能带宠物能party"},
+         {textb:"更具家庭氛围",textc:"在住多多，享受家的温馨和舒适"},
+         {textb:"比酒店更实惠",textc:"比等价酒店空间大，设施更齐全"},
+         {textb:"新奇当地体验",textc:"风格迥异，体验新奇，融入当地"},
+    ]
+    $scope.Monica=[
+         {img:"./img/user-photo1.gif",monica:"Monica",textc:"房间很宽敞也很整洁，房东很热心。步行至奥林匹克公园只要15分钟，白天参观其他景点，晚上和家人去散散步，就像在家一样。离开时赶早晨的火车，房东还早起给煮了馄饨，很感激，很不错的体验！"},
+         {img:"./img/user-photo2.jpg",monica:"sm198",textc:"孩子开学，过来送孩子，顺便带全家来帝都旅游。最后在住多多选择了这家民宿，两居室，各种设施齐全，紧挨人大，出行公交地铁都很方便，家人很喜欢！"},
+         {img:"./img/user-photo3.jpg",monica:"柠雨溪",textc:"房东非常好，还为我们准备了公交卡，非常感谢。家里景色很好，楼层高视野好，是旅行在外的优选。距离解放碑步行街和洪崖洞很近，由于我们的飞机是晚上，还主动提出让我们晚三个小时退房，很贴心，非常棒。"},
+         
+    ]
+}])

@@ -1,0 +1,52 @@
+<div class="trustCommunity" >
+			<h4>以品质为基础的社区</h4>
+			<ul class="clearfix">
+				<li ng-repeat="items in arrs">
+					<div class="fix">
+						 <img ng-src={{items.img}} alt="">
+						<p>{{items.tex}}</p> 
+					</div>
+				</li>
+			</ul>
+		</div>
+<div class="section">
+        	<ul class="trustMerit-list">
+        		<li class="trustMerit-item" ng-repeat="tru in icon">
+        			<div class="trustMerit-icon">
+        				<p class="text-b">{{tru.textb}}</p>
+        				<p class="text-c">{{tru.textc}}</p>
+        			</div>
+        		</li>
+        	</ul>
+        </div>
+<div class="userAssess">
+	<h4 class="title-s1">用户评价</h4>
+	<div class="userAssessList">
+		<div class="user_section">
+			<ul>
+				<li ng-repeat="monica in Monica">
+					<div>
+						<img class="user-photo" ng-src={{monica.img}} alt="">
+						<p>{{monica.monica}}</p>
+						<p>{{monica.textc}}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="zhubaCode">
+    <div class="zhu_center">
+        <img class="app-code" src="./img/zhudd-code.png" alt="" />
+        <div class="icon">
+			<a class="appdowmload index-android">
+			    <i class="icon-v4 android-icon"></i>
+			</a>
+			<span class="split"> &nbsp;&nbsp;&nbsp;</span>
+
+			<a class="appdowmload index-ios" >
+			    <i class="icon-v4 ios-icon"></i>
+			</a>
+		</div>
+    </div>
+</div>

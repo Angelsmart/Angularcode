@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head ng-app="myApp">
+    <meta charset="UTF-8">
+    <script src="../js/angular.min.js"></script>
+    <title>4.12$rootScope的组件之间的通信</title>
+    <style>
+    	.ctr1{
+    		width: 100px;
+    		height: 50px;
+    		background-color:darkgoldenrod ;
+    	}
+    	.ctr2{
+    		width: 100px;
+    		height: 50px;
+    		background-color:limegreen;
+    	}
+    </style>
+</head>
+
+<body >
+    <div class="ctr1" ng-controller="firstCtrl">
+    	{{name}}
+    </div>
+    <div class="ctr2" ng-controller="secondCtrl">
+    	{{ name }}
+    </div>
+    <script>
+    	(function(){
+    		var app = angular.module("myApp", []);
+    		//$rootScope的组件之间的通信
+    		app.controller('firstCtrl',['$rootScope','$scope',function($rootScope,$scope){
+    			$rootScope.$scope = $scope;
+    			console.log($rootScope.$scope);
+    			$scope.name = "明明";
+    		}])
+    		.controller('secondCtrl',['$scope','$rootScope',function($scope,$rootScope){
+    			$scope.name = $rootScope.$scope.name;
+    		}])
+    	})()
+        
+        
+    </script>
+</body>
+
+</html>

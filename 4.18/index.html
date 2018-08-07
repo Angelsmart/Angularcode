@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myDemo">
+	<head>
+		<meta charset="UTF-8">
+		<title>ui.router</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/angular-ui-router.js"></script>
+	</head>
+	<body ng-controller='firstCtrl'>
+	    <div class="content" ui-view></div>
+		<script type="text/javascript">
+			;(function(){
+				var app = angular.module('myDemo',['ui.router']);
+				app.controller('firstCtrl',['$scope',function($scope){
+					$scope.name = "ming";
+				}]);
+				
+				//第一种默认显示的路由
+				app.config(function($urlRouterProvider){
+					$urlRouterProvider.otherwise('/home/login')
+				});
+				
+				//第一种ui.router方法
+				app.config(function($stateProvider){
+					$stateProvider
+					.state('home',{
+						url:"/home",
+						templateUrl:'./home.html'
+					})
+					.state('home.login',{
+						url:"/login",
+						templateUrl:'./router/login.html'
+					})
+					.state('home.admin',{
+						url:"/admin",
+						templateUrl:'./router/admin.html'
+					})
+					.state('home.404page',{
+						url:"/404page",
+						templateUrl:'./router/404page.html'
+					})
+					.state('home.zi',{
+						url:"/zi",
+						templateUrl:'./router/zi.html'
+					})
+				})
+			})();
+		</script>
+	</body>
+</html>

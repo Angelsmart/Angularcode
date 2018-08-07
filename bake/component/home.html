@@ -1,0 +1,135 @@
+<div>
+	<div class="header_top"></div>
+	<div class="header_nav">
+		<div class="header">
+			<div class="header_box">
+				<div class="nav_logo">
+					<a class="logo" ng-click="logo()"></a>
+					<!--查找 签到-->
+					<div class="lookup">
+						<ul>
+							<li class="map_A">
+								<a href="">
+									<span class="map" id="map"></span>
+									<span class="look" id="look">Find a Store</span>
+								</a>
+							</li>
+							<li id="sign">
+								<a href="">Sign In</a>
+							</li>
+						</ul>
+					</div>
+					<!--导航路由-->
+					<div class="nav">
+						<!--三条-->
+						<div class="nav_box">
+							<a href="">
+								<span class="nav_b_s"></span>
+								<span></span>
+							</a>
+						</div>
+						<!--路由-->
+						<div class="nav_content">
+							<ul>
+								<li ng-repeat="item in arr">
+									<a ui-sref="{{item.path}}">
+										<strong>{{item.textb}}</strong>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div ui-view></div>
+	<div class="footer">
+	<div class="footer-top">
+		<div class="conta">
+			<div class="gird">
+				<ul class="logo1">
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+					<li><i></i></li>
+				</ul>
+				<div class="pro">
+					<div class="pro1">
+						<p>Join our email list</p>
+						<input class="in1" type="" name="" placeholder="Email address">
+						<input class="in2" type="" name="" placeholder="Zip code">
+						<button class="btn1">GET &nbsp&nbsp STARTED</button>
+						<p>By clicking "GET STARTED" I agree to receive news, promotions, 
+						information, and offers from Starbucks. See our</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ooo">
+		<div class="footer-bottom">
+			<li>
+				<p>ABOUT US</p>
+				<p>Our Company</p>
+				<p>Investor Relations</p>
+				<p>Newsroom</p>
+			</li>
+			<li>
+				<p>CAREER CENTER</p>
+				<p>Working at Starbucks</p>
+				<p>College Plan</p>
+				<p>Current Partners</p>
+				<p>Corporate Careers</p>
+				<p>Manufacturing and Distribution</p>
+				<p>Retail Careers</p>
+				<p>International Careers</p>
+			</li>
+			<li>
+				<P>FOR BUSINESS</P>
+				<P>Office Coffee</P>
+				<P>Starbucks Coffee International</P>
+				<P>Foodservice</P>
+				<P>Licensed Stores</P>
+				<P>Starbucks Card Corporate Sales</P>
+				<P>Landlord Support Center</P>
+				<P>Suppliers</P>
+			</li>
+			<li>
+				<p>ONLINE COMMUNITY</p>
+				<P>Facebook</P>
+				<P>Twitter</P>
+				<P>Instagram</P>
+				<P>LinkedIn</P>
+				<P>Pinterest</P>
+				<P>YouTube</P>
+				<P>My Starbucks Idea</P>
+			</li>
+			<li>
+				<P>QUICK LINKS</P>
+				<P>My Account</P>
+				<P>Store Locator</P>
+				<P>Nutrition Info</P>
+				<P>Customer Service</P>
+			</li>
+			<div class="logo2"></div>
+		</div>
+	</div>
+		<div class="tom1">
+			<div class="qqqq">
+				<div class="tom2">
+					<div class="tom3">
+						<li><img src="./img/us.png">
+							<span class="si">Change Region</span>
+							<span>|</span>
+							<span class="bo">English </span>
+						</li>
+						<li class="zhang">Web Accessibility&nbsp|&nbspPrivacy Policy&nbsp|&nbspTerms of Use&nbsp|&nbspContact Us&nbsp|&nbspPartners&nbsp|&nbspSite Map</li>
+						<li class="xiaobai">2018 Starbucks Corporation. All rights reserved.</li>
+					</div>
+				</div>
+			</div>
+		<div class="foo"></div>
+		</div>
+</div>

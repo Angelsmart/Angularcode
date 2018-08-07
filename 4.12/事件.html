@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/angular.min.js"></script>
+	<script type="text/javascript" src="../js/angular-ui-router.js"></script>
+    <title>4.12事件广播</title>
+    <style>
+    	.parents{
+    		width: 800px;
+    		height: 500px;
+    		background: blue;
+    	}
+    	.Ctrl{
+    		width: 500px;
+    		height: 50px;
+    		background-color:darkgoldenrod ;
+    	}
+    	button{
+    		width: 30px;
+    		height: 20px;
+    		background: lime;
+    	}
+    </style>
+</head>
+
+<body>
+    <div class="parents" ng-controller="parentCtrl">
+    	<p>{{name}}</p>
+    	<div class="Ctrl" ng-controller="Ctrl">
+    		<p>{{name}}</p>
+    		<button ng-click="sendToChild()">点</button>
+    	</div>
+    </div>
+    <script>
+    	(function(){
+    		var app = angular.module("myApp",["ui.router"]);
+    		app.controller("parentCtrl",["$scope",function($scope){
+    			$scope.name = "父级";
+    			/*$scope.sendToChild=function(){
+    				$scope.$broadcast("sendToChild",$scope.name)
+    			}*/
+    			$scope.$on("sendToChild",function(e,newName){
+    				$scope.name = newName;
+    			})
+    		}])
+    		.controller("Ctrl",["$scope",function($scope){
+    			$scope.name = "子级";
+    			/*$scope.$on("sendToChild",function(e,newName){
+    				$scope.name = newName;
+    			})*/
+    			$scope.sendToChild=function(){
+    				$scope.$emit("sendToChild",$scope.name)
+    			}
+    		}])
+    	})()
+        
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+.header_top{
+	height: 10px;
+	background: #006341;
+}
+.header_nav{
+	position: relative;
+    padding-top: 12px;
+	background: #f7f7f7;
+}
+.header{
+	width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.header_box{
+	/*width:1309px;*/
+	/*height: 78px;*/
+	text-align: left;
+    font-family: 'NoSpace';
+    /*background: pink;*/
+}
+
+/*导航logo*/
+.nav_logo{
+	overflow: hidden;
+	box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px;
+    vertical-align: top;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+}
+.logo{
+	position: relative;
+    top: 3px;
+	float: left;
+	display: inline-block;
+	width: 50px;
+    height: 50px;
+    margin-bottom: 18px;
+	background-image: url(../img/logo.svg);
+	background-size: 100%;
+}
+.lookup{
+	width: 100%;
+	height: 20px;
+	/*background: red;*/
+}
+.lookup>ul{
+	margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    float: right;
+    overflow: hidden;
+}
+.lookup>ul>li{
+	float: left;
+}
+.lookup>ul>li:nth-of-type(2){
+	border-left: 1px solid #000;
+}
+.lookup>ul>li>a{
+	color: #5b5959;
+	padding: 0 13px;
+}
+.lookup>ul>.map_A>a>.map{
+	vertical-align: top;
+	width: 28px;
+	height: 20px;
+	padding-right: 5px;
+	display: inline-block;
+	background: url(../img/地图00.svg) no-repeat center;
+	background-size: 60%;
+}
+
+/*导航*/
+.nav{
+	float: left;
+    clear: none;
+    margin-left: 26px;
+    margin-top: 12px;
+}
+.nav_box{
+	position: absolute;
+    top: 24px;
+    right: 5px;
+    width: 44px;
+    height: 44px;
+    background: red;
+    display: none;
+}
+.nav_b_s{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #006341;
+    border: 12px solid #f7f7f7;
+}
+
+.nav_b_s:before,.nav_b_s:after{
+	content: '';
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: #f7f7f7;
+    transition: all ease .2s;
+}
+.nav_b_s:after{
+	top: 60%;
+}
+
+.nav_content{
+	
+}
+.nav_content>ul{
+	overflow: hidden;
+	margin-bottom: 0;
+}
+.nav_content>ul>li{
+	float: left;
+	margin: 0 1px 0 0;
+}
+.nav_content>ul>li>a{
+	/*width: 45px;*/
+	display: block;
+	border-bottom: 3px solid #f7f7f7;
+    padding: 16px;
+    color: #000;
+}
+.nav_content>ul>li>a:hover{
+	background: #e1e1e1;
+}
+.nav_content>ul>li>a:hover{
+	border-bottom-color: #1e1e1e;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.nav_content>ul>li>a>strong{
+	cursor: pointer;
+	font-size:13px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+}
+
+.footer{
+	width: 100%;
+	height: 735px;
+}
+.footer-top{
+	width: 100%;
+	height: 174px;
+	background-color:#F0F0F0;
+}
+.conta{
+	width: 100%;
+	height: 133px;
+	float: left;
+	margin-top: 43px;
+}
+.gird{
+	width: 1320px;
+	height: 133px;
+	margin: 0 auto;
+}
+.logo1{
+	width: 440px;
+	height: 75px;
+	float: left;
+}
+.pro{
+	width: 850px;
+	height: 133px;
+	margin-left:480px;
+}
+.pro1{
+	width: 830px;
+	height: 133px;
+	margin: 0 auto;
+}
+.Pro1>p{
+	font-size: 15px;
+	color: #882F63;
+}
+.pro1>input{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.in1{
+	width: 270px;
+	height:30px;
+}
+.in2{
+	width: 100px;
+	height:30px;
+}
+.logo1>li>i{
+	height: 31px;
+	float: left;
+	margin-left: 1px;
+	cursor: pointer;
+	background:url(../img/social_icons.png);
+	background-size: cover;
+}
+.logo1>li{
+	width: 47px;
+	height: 31px;
+	float: left;
+}
+.logo1>li>i:hover{
+	color:#fff;
+}
+.logo1>li:nth-child(1)>i{
+	width: 25px;
+	    background-position: 0 0;
+}
+.logo1>li:nth-child(2)>i{
+	width: 29px;
+	     background-position: -26px 0;
+}
+.logo1>li:nth-child(3)>i{
+	width: 26px;
+	    background-position: -55px 0;
+}
+.logo1>li:nth-child(4)>i{
+	width: 29px;
+	     background-position: -83px 0;
+}
+.logo1>li:nth-child(5)>i{
+	width: 28px;
+	     background-position: -113px 0;
+}
+.btn1{
+	margin:0;
+	width: 170px;
+	height: 30px;
+	background-color: #3D3935;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 10%;
+	display: inline-block;
+}
+.btn1:hover{
+	background-color: #63615D;
+}
+.ooo{
+	width: 100%;
+	height:360px;
+	margin-top: 40px;
+	background-color: #F7F7F7;
+}
+.footer-bottom{
+	width: 1300px;
+	height:360px;
+	margin:0 auto;
+	margin-top: 40px;
+	background-color: #F7F7F7;
+}
+.footer-bottom>li{
+	float: left;
+}
+.footer-bottom>li>p{
+	margin-top: 15px;
+	color:#5A4435;
+	font-size: 1px;
+	cursor: pointer;
+}
+.footer-bottom>li>p:hover{
+	color: #8A8885;
+}
+.footer-bottom>li:nth-child(1){
+	margin-left: 20px;
+	width: 218px;
+	height: 165px;
+}
+.footer-bottom>li:nth-child(1)>p:nth-child(1){
+	font-weight: 900;
+	font-size: 20px;
+}
+.footer-bottom>li:nth-child(2)>p:nth-child(1){
+	font-weight: 900;
+	font-size: 20px;
+}
+.footer-bottom>li:nth-child(3)>p:nth-child(1){
+	font-weight: 900;
+	font-size: 20px;
+}
+.footer-bottom>li:nth-child(4)>p:nth-child(1){
+	font-weight: 900;
+	font-size: 20px;
+}
+.footer-bottom>li:nth-child(5)>p:nth-child(1){
+	font-weight: 900;
+	font-size: 20px;
+}
+.footer-bottom>li:nth-child(2){
+	margin-left: 20px;
+	width: 218px;
+	height: 305px;
+}
+.footer-bottom>li:nth-child(3){
+	margin-left: 20px;
+	width: 218px;
+	height: 320px;
+}
+.footer-bottom>li:nth-child(4){
+	margin-left: 20px;
+	width: 218px;
+	height: 305px;
+}
+.footer-bottom>li:nth-child(5){
+	margin-left: 20px;
+	width: 218px;
+	height:176px;
+}
+.logo2{
+	width: 15px;
+	height: 170px;
+	margin-left: 1280px;
+	background:url(../img/wordmark_footer.png) center;
+	background-size:15px 170px;
+}
+.tom1{
+	width: 100%;
+	height: 208px;
+	background-color: #fff;
+}
+.qqqq{
+	width: 100%;
+	height: auto;
+}
+.tom2{
+	width: 1200px;
+	height: 163px;
+	margin: 0 auto;
+}
+.tom3{
+	width: 1200px;
+	height: 163px;
+	margin: 0 auto;
+	margin-left: -35px;
+}
+.si{
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.si:hover{
+	color: #88829E;
+}
+.bo{
+	font-size: 14px;
+}
+.zhang{
+	margin-top: 30px;
+	font-size: 16px;
+	color: #7C667C;
+	cursor: pointer;
+}
+.xiaobai{
+	font-size: 12px;
+	color: #B3B3B3;
+	margin-top: 30px;
+}
+.foo{
+	width: 100%;
+	height: 10px;
+	margin-top: 35px;
+	background-color: #382F2D;
+

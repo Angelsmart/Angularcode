@@ -1,0 +1,263 @@
+section{
+    background-color: rgb(255,219,198);
+}
+@media (min-width: 541px){
+    section{
+        height: 532px;
+    }
+    .hero_image{
+        width: 100%;
+        height: 100%;
+        background: url("../images/banner.gif") no-repeat center;
+        position: relative;
+    }
+}
+.hero_overlay{
+    width: 64%;
+    height: 120px;
+    position: absolute;
+    padding: 20px;
+    top:58%;
+    left: 16%;
+    text-align: center;
+}
+.hero_overlay>li{
+    margin-top: 30px;
+}
+.button_wrap>a{
+    display: inline-block;
+    padding: 8px 28px;
+    border:1px solid;
+    border-radius: 4px;
+    font-size: 16px;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 125ms ease-in-out;
+}
+.button_wrap>a:hover{
+    background-color: rgba(100,100,100,0.2);
+}
+@media (max-width: 960px) and (min-width: 541px) {
+    section{
+        height: 392px;
+    }
+}
+@media (max-width: 540px) and (min-width: 481px) {
+    section{
+        height: 532px;
+    }
+    .hero_image{
+        width: 100%;
+        height: 100%;
+        background: url("../images/banner.jpg") no-repeat top center;
+        position: relative;
+    }
+    .hero_copy{
+        font-size: 13px;
+    }
+}
+@media (max-width: 480px){
+    section{
+        height: 462px;
+    }
+    .hero_image{
+        width: 100%;
+        height: 100%;
+        background: url("../images/banner.jpg") no-repeat top center;
+        position: relative;
+    }
+    .hero_copy{
+        font-size: 13px;
+    }
+}
+.msr_bar{
+    width: 100%;
+    background: #0f0f0f;
+}
+.msr{
+    width: 100%;
+    overflow: hidden;
+    margin:0 auto;
+}
+.rewards_logo{
+    background: url("../images/MSR-chalk-background.jpg") no-repeat;
+    padding: 85px 0 0 30px;
+}
+.rewards_logo>img{
+    width: 220px;
+}
+.grid{
+    color: #ffffff;
+}
+.rewards_copy{
+    padding:25px 40px 25px 15px;
+}
+.rewards_copy>h1{
+    margin-bottom: 14px;
+    font-weight: inherit;
+}
+.cta_wrap>a{
+    display: inline-block;
+    padding: 6px 28px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+    transition: 125ms ease-in-out;
+}
+.cta_wrap>a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.sign_up_link{
+    background-color: #EEC37A;
+    border:1px solid #EEC37A;
+    color: #0f0f0f;
+}
+.sign_in_link{
+    border:1px solid #FFFFFF;
+    color: #ffffff;
+}
+@media (min-width: 1025px) {
+    .rewards_logo{
+        width: 420px;
+        height: 132px;
+        float: left;
+    }
+    .cta_wrap{
+        padding: 0 24px 30px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .rewards_logo{
+        width: 40%;
+        height: 115px;
+        float: left;
+    }
+    .grid{
+        height: 200px;
+    }
+    .rewards_copy>h1{
+        font-size: 22px;
+    }
+    .rewards_copy>p{
+        font-size: 12px;
+    }
+    .cta_wrap{
+        padding: 25px 20px 30px;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) and (min-width: 590px) {
+    .rewards_logo{
+        width: 260px;
+        height: 115px;
+        float: left;
+    }
+    .rewards_logo>img{
+        width: 180px;
+    }
+    .grid{
+        padding-left:50%;
+        height: 200px;
+    }
+    .rewards_copy{
+        text-align: center;
+    }
+    .rewards_copy>h1{
+        font-size: 16px;
+    }
+    .rewards_copy>p{
+        font-size: 12px;
+    }
+    .cta_wrap{
+        text-align: center;
+    }
+}
+@media (max-width: 589px) {
+    .rewards_logo{
+        width: 50%;
+        margin:0 auto;
+        text-align: center;
+        padding: 20px 0 20px 30px;
+    }
+    .rewards_logo>img{
+        width: 165px;
+    }
+    .grid{
+        width: 100%;
+        text-align: center;
+    }
+    .rewards_copy>h1{
+        font-size: 16px;
+    }
+    .rewards_copy>p{
+        font-size: 12px;
+    }
+    .cta_wrap{
+        width: 100%;
+        text-align: center;
+    }
+}
+.content_stripes_container{
+    width: 100%;
+    background-color: #FAF8F5;
+}
+.content_stripe{
+    text-align: center;
+    padding: 70px 20px;
+}
+.grid_middle{
+    width: 100%;
+    text-align: center;
+}
+.grid_middle>div{
+    display: inline-block;
+}
+.image_block>a>img{
+    width: 100%;
+}
+.text_block>h2{
+    margin-bottom: 20px;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+.text_block>p{
+    margin-bottom: 17px;
+    font-family: "Crete Round",Georgia,"Times New Roman",serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 25px;
+}
+.text_block>a{
+    padding:5px 0;
+    margin: 11px 0 0;
+    color: #3d3a35;
+    border-bottom: 1px dotted;
+}
+.text_block>a:hover{
+    background-color: rgba(222,222,222,0.4);
+    border-bottom: 1px solid;
+}
+.text_block>a:after{
+    content: '\00a0\00BB';
+}
+@media (min-width: 768px) {
+    .grid_middle>div{
+        width: 39%;
+        padding: 0 20px;
+        vertical-align: middle;
+    }
+    .text_block{
+        text-align: left;
+        margin-left: 8%;
+    }
+}
+@media (max-width: 767px) {
+    .grid_middle>div{
+        width: 80%;
+    }
+    .image_block{
+        width: 505px;
+    }
+}

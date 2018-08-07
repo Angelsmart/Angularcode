@@ -1,0 +1,140 @@
+@media screen and (min-width:1200px) {
+	.page .fast  {
+				width: 100%;
+				height: 177px;
+				margin-top: 8px;
+				display: flex;
+			}	
+	.page .fast li{
+			  width: 329px;
+			  height: 167px;
+			  flex:1;
+			  position: relative;
+	        }
+	.page .fast li img{
+	          	height: 167px;
+	          	outline: 1px solid #eee;
+	          }
+	.page .fast li .fa{
+	          	width: 329px;
+	          	height: 167px;
+	          	background-color: black;
+	          	opacity: 0.3;
+	          	position: absolute;
+	            left: 0;
+	          	top:0;
+	          	display: none;
+	          	 
+	          }
+			
+	.page .fast li:hover .fa{
+	          	display: block;
+	          	transition: all 2s;
+	          }
+}
+@media (min-width: 998px) and (max-width: 1199px){
+    .page .fast{
+				width: 90%;
+				height: 400px;
+				margin: 0 auto;
+				display: flex;
+				flex-wrap: wrap;
+			}	
+	.page .fast li{
+		      flex: 1;
+			  width: 400px;
+			  height: 200px;
+			  position: relative;
+			  margin-top: 8px;
+	        }
+	.page .fast li img{
+	          	height: 200px;
+	          	outline: 1px solid #eee;
+	          }
+	.page .fast li .fa{
+	          	width: 396px;
+	          	height: 200px;
+	          	background-color: black;
+	          	opacity: 0.3;
+	          	position: absolute;
+	            left: 0;
+	          	top:0;
+	          	display: none;
+	          	 
+	          }
+			
+	.page .fast li:hover .fa{
+	          	display: block;
+	          	transition: all 2s;
+	          }	
+}
+@media (min-width: 768px) and (max-width: 997px){
+	.page .fast{
+				width: 80%;
+				margin: 0 auto;
+			}	
+	.page .fast li{
+			  width: 600px;
+			  height: 300px;
+			  position: relative;
+			  top: 0;
+			  left: 0;
+			  margin-top: 8px;
+	        }
+	.page .fast li img{
+		        width: 100%;
+	          	height: 300px;
+	          	outline: 1px solid #eee;
+	          }
+	.page .fast li .fa{
+	          	width: 600px;
+	          	height: 300px;
+	          	background-color: black;
+	          	opacity: 0.3;
+	          	position: absolute;
+	            left: 0;
+	          	top:0;
+	          	display: none;
+	          	 
+	          }
+			
+	.page .fast li:hover .fa{
+	          	display: block;
+	          	transition: all 2s;
+	          }	
+}
+@media screen and (max-width: 767px){
+	.page .fast{
+				width: 70%;
+				margin: 0 auto;
+			}	
+	.page .fast li{
+			  width: 329px;
+			  height: 167px;
+			  position: relative;
+			  top: 0;
+			  left: 0;
+			  margin-top: 8px;
+	        }
+	.page .fast li img{
+		        width: 100%;
+	          	height: 167px;
+	          	outline: 1px solid #eee;
+	          }
+	.page .fast li .fa{
+	          	width: 329px;
+	          	height: 167px;
+	          	background-color: black;
+	          	opacity: 0.3;
+	          	position: absolute;
+	            left: 0;
+	          	top:0;
+	          	display: none;
+	          	 
+	          }
+			
+	.page .fast li:hover .fa{
+	          	display: block;
+	          	transition: all 2s;
+	          }	
+}
